@@ -1,0 +1,21 @@
+<h2>Login</h2>
+
+{% if mensaje %}
+<p id="mensaje-error">{{ mensaje }}</p>
+{% endif %}
+
+<form method="POST">
+
+<label>Usuario</label>
+<input type="text" id="username" name="username">
+
+<label>Password</label>
+<input type="password" id="password" name="password">
+
+<button id="login-btn" type="submit">Login</button>
+
+</form>
+
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
